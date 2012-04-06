@@ -1,3 +1,7 @@
+# nyucore.rnc
+# based on, and playing with possible modifications to, a schema invented by Corey Harper at NYU
+# realized in RNC by Tom Elliott at the Institute for the Study of the Ancient World, April 2012
+
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 namespace dc = "http://purl.org/dc/elements/1.1/"
 namespace dcterms = "http://purl.org/dc/terms/"
