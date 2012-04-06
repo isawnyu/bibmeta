@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema-rnc/nyucore.rnc" type="application/relax-ng-compact-syntax"?>
+<NYUCoreRecord xmlns="http://purl.org/nyu/digicat/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">
+    <accessURL>http://isaw.nyu.edu/members/tom.elliott-40nyu.edu/downloads/epigraphic-evidence-for-boundary-disputes-in-the-roman-empire/view</accessURL>
+    <dc:title>Epigraphic Evidence for Boundary Disputes in the Roman Empire</dc:title>
+    <dc:type>http://purl.org/dc/dcmitype/Text</dc:type>
+    <dc:creator>Thomas Elliott</dc:creator>
+    <dc:date>2004</dc:date>
+    <dc:language>en</dc:language>
+    <dc:format>application/pdf</dc:format>
+    <dcterms:abstract xml:lang="mul">This dissertation presents all published Greek and Latin
+        epigraphic documents relating to internal boundary disputes of the Roman empire. In date, it
+        spans the period from 2 BC to the third century AD. Spatially, the documents derive from 12
+        provinces (Achaia, Africa, Asia, Baetica, Cilicia, Creta et Cyrene, Dalmatia, Iudaea,
+        Lusitania, Macedonia, Moesia and Syria), plus Italy. The presentation of each includes a
+        text, English translation, bibliography and commentary. Analytical chapters expand upon
+        recent published work by G. Burton and B. Campbell. Terminological analysis permits
+        classification of epigraphic and literary evidence into five categories: boundary disputes,
+        restoration of public and sacred lands, other land disputes, the assignment of boundaries
+        and other authoritative demarcations involving Roman officials. The analysis also provides a
+        more focused definition of several Latin and Greek words that indicate the delivery of a
+        verdict by a Roman official (decretum, sententia, iudicium, ἀποφάσις, κρίσις, ἐπικρίμα).
+        Categorization of evidence permits a close examination of the identities and roles of Roman
+        administrative personnel involved in such cases. This analysis indicates that boundary
+        disputes were normally handled at the lowest possible level. In the provinces, disputes
+        between communities or individuals were handled by the governor, sometimes through appointed
+        judges and sometimes in consultation with the emperor. Imperial legates with responsibility
+        for the provincial census seem also to have had authority to adjudicate boundary disputes
+        arising in the course of their duties. Disputes that straddled provincial boundaries or
+        boundaries of imperial estates, or that involved cities with special status or privilege,
+        required the emperor’s attention. These cases were normally delegated to special legates. A
+        similar procedure could be employed in Italy, where there was no governor upon whom to rely.
+        In all boundary disputes, the presiding officials seem to have been guided in their actions
+        by the dictates of Roman private law in boundary dispute cases, whether it properly applied
+        to the communities involved or not. In particular, they seem to have observed a requirement
+        that the verdict in a boundary dispute be delivered on site in the presence of the parties
+        to a case.</dcterms:abstract>
+    <dc:rights>Copyright 2004 Thomas Elliott. All rights reserved.</dc:rights>
+</NYUCoreRecord>

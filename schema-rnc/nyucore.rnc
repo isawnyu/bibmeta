@@ -1,0 +1,49 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+namespace dc = "http://purl.org/dc/elements/1.1/"
+namespace dcterms = "http://purl.org/dc/terms/"
+namespace nc = "http://purl.org/nyu/digicat/"
+
+start = Core | Record
+
+Core = element nc:NYUCoreSet {
+    Record*
+}
+
+Lang = attribute xml:lang { xsd:language }
+DCDefault = Lang?, xsd:token 
+
+Record = element nc:NYUCoreRecord { 
+    Lang?,
+    element nc:accessURL { xsd:anyURI }*, 
+    element dc:identifier { xsd:anyURI }*,
+    element nc:archiveURL { xsd:anyURI }*,
+    element dc:title { DCDefault }*,
+    element dcterms:alternative { DCDefault }*,
+    element nc:vernacular { DCDefault }*, 
+    element nc:uniform  { DCDefault }*,
+    element dc:type { DCDefault }*,
+    element dcterms:isPartOf { xsd:anyURI }*,
+    element dc:creator { DCDefault }*,
+    element dc:contributor { DCDefault }*,
+    element nc:isbn { DCDefault }*,
+    element nc:issn { DCDefault }*,
+    element dc:subject { DCDefault }*,
+    element nc:genre { DCDefault }*,
+    element nc:classification { DCDefault }*,
+    element dc:date { DCDefault }*,
+    element dcterms:modified { DCDefault }*,
+    element dc:publisher { DCDefault }*,
+    element dc:language { DCDefault }*,
+    element dc:coverage { DCDefault }*,
+    element dcterms:spatial { DCDefault }*,
+    element dcterms:temporal { DCDefault }*,
+    element dcterms:extent { DCDefault }*,
+    element dc:format { DCDefault }*,
+    element dc:description { DCDefault }*,
+    element dcterms:abstract { Lang?, xsd:string }*,
+    element nc:fullText { Lang?, xsd:string }?,
+    element dc:rights { DCDefault }*
+    
+    
+}
+
