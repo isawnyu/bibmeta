@@ -2,7 +2,9 @@
 <?xml-model href="../../schema-rnc/nyucore.rnc" type="application/relax-ng-compact-syntax"?>
 <NYUCoreRecord xmlns="http://purl.org/nyu/digicat/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">
+    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xml:id="elliott-2004"
+    xml:lang="en">
     <accessURL>http://isaw.nyu.edu/members/tom.elliott-40nyu.edu/downloads/epigraphic-evidence-for-boundary-disputes-in-the-roman-empire/view</accessURL>
     <dc:title>Epigraphic Evidence for Boundary Disputes in the Roman Empire</dc:title>
     <dc:type>http://purl.org/dc/dcmitype/Text</dc:type>

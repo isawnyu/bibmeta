@@ -2,6 +2,7 @@ datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 namespace dc = "http://purl.org/dc/elements/1.1/"
 namespace dcterms = "http://purl.org/dc/terms/"
 namespace nc = "http://purl.org/nyu/digicat/"
+namespace ic = "http://isaw.nyu.edu/meta/ns/"
 
 start = Core | Record
 
@@ -13,16 +14,18 @@ Lang = attribute xml:lang { xsd:language }
 DCDefault = Lang?, xsd:token 
 
 Record = element nc:NYUCoreRecord { 
-    Lang?,
-    element nc:accessURL { xsd:anyURI }*, 
-    element dc:identifier { xsd:anyURI }*,
-    element nc:archiveURL { xsd:anyURI }*,
+    attribute xml:id { xsd:ID },                            # identifier for this metadata record
+    Lang,                                                   # must indicate language of the record itself (not the work)
+    element nc:accessURL { xsd:anyURI }*,               
+    element dc:identifier { xsd:anyURI }*,                  # more constrained type that that in dublin core's schema
+    element nc:archiveURL { xsd:anyURI }*,                  
     element dc:title { DCDefault }*,
     element dcterms:alternative { DCDefault }*,
     element nc:vernacular { DCDefault }*, 
     element nc:uniform  { DCDefault }*,
+    element ic:short { DCDefault }*,                        # short title(s)
     element dc:type { DCDefault }*,
-    element dcterms:isPartOf { xsd:anyURI }*,
+    element dcterms:isPartOf { xsd:anyURI }*,               # more constrained type that that in dublin core's schema
     element dc:creator { DCDefault }*,
     element dc:contributor { DCDefault }*,
     element nc:isbn { DCDefault }*,
@@ -42,8 +45,8 @@ Record = element nc:NYUCoreRecord {
     element dc:description { DCDefault }*,
     element dcterms:abstract { Lang?, xsd:string }*,
     element nc:fullText { Lang?, xsd:string }?,
-    element dc:rights { DCDefault }*
-    
+    element dc:rights { DCDefault }*,
+    element ic:formattedCitation { Lang?, xsd:string }?     # formatted, plain-text citation
     
 }
 
