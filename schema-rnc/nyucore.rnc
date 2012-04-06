@@ -7,6 +7,7 @@ namespace dc = "http://purl.org/dc/elements/1.1/"
 namespace dcterms = "http://purl.org/dc/terms/"
 namespace nc = "http://purl.org/nyu/digicat/"
 namespace ic = "http://isaw.nyu.edu/meta/ns/"
+namespace xhtml = "http://www.w3.org/2005/Atom"
 
 start = Core | Record
 
@@ -50,7 +51,21 @@ Record = element nc:NYUCoreRecord {
     element dcterms:abstract { Lang?, xsd:string }*,
     element nc:fullText { Lang?, xsd:string }?,
     element dc:rights { DCDefault }*,
-    element ic:formattedCitation { Lang?, xsd:string }?     # formatted, plain-text citation
+    element ic:formattedCitation { FormattedCitation }?     # formatted, plain-text citation
     
 }
+
+PlainTextCitation = Lang?, attribute type { "text" }?, xsd:string
+RichTextCitation = Lang?, attribute type { "xhtml" }?, xhtmlDiv
+FormattedCitation = PlainTextCitation | RichTextCitation
+
+anyXHTML = element xhtml:* {
+      (attribute * { text }
+       | text
+       | anyXHTML)*}
+
+xhtmlDiv = element xhtml:div {
+      (attribute * { text }
+       | text
+       | anyXHTML)*}
 
