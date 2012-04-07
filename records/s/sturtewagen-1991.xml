@@ -6,6 +6,7 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
     <NYUCoreRecord xml:id="sturtewagen-1991" xml:lang="en">
+        <!-- how to indicate this is a journal article? -->
         <dc:title>The funerary papyrus Palau Rib. Nr. Inv. 450</dc:title>
         <ic:short>Estud.Pap. 1</ic:short>
         <ic:short>Sturtewagen 1991</ic:short>
@@ -25,13 +26,12 @@
         <!-- what about place of publication? in this case: Barcelona. 
         Not the same as dcterms:spatial -->
         <dc:format><!-- there is no mime type for "dead tree" --></dc:format>
-        
-        
     </NYUCoreRecord>
 
     <NYUCoreRecord xml:id="estud-pap" xml:lang="en">
+        <!-- how to indicate this is a series? -->
         <dc:title>Estudis de papirología i filología bíblica</dc:title>
-        <dc:type>series</dc:type>
+        <dc:type>http://purl.org/dc/dcmitype/Text</dc:type>
     </NYUCoreRecord>
 
 </NYUCoreSet>
