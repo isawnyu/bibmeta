@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema-rnc/nyucore.rnc" type="application/relax-ng-compact-syntax"?>
+<NYUCoreRecord xmlns="http://purl.org/nyu/digicat/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ic="http://isaw.nyu.edu/meta/ns/"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xml:id="archaeological-work-of-ephorias-on-the-internet" xml:lang="en">
+    <accessURL>http://www.yppo.gr/0/anaskafes/</accessURL>
+    <ic:formattedCitation type="xhtml">
+        <xhtml:div>
+            <xhtml:h1>The archaeological work of the ephorias on the Internet</xhtml:h1>
+            <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/">The archaeological work of the
+                    ephorias on the Internet, 2000-2010</xhtml:a> Hellenic Ministry of Culture and
+                Tourism</xhtml:p>
+            <xhtml:img src="http://www.yppo.gr/0/anaskafes/images/cover.jpg"
+                alt="image of book cover"/>
+            <xhtml:blockquote>
+                <xhtml:h2><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/EISAGWGI.pdf"
+                        >Εισαγωγή</xhtml:a></xhtml:h2>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/ATTIKI.pdf">1. ΑΤΤΙΚΗ
+                        &amp; ΝΗΣΙΑ</xhtml:a></xhtml:p>
+                <xhtml:ul><xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/A_EPKA.pdf"
+                            >Α' Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/C_EPKA.pdf">Γ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/B_EPKA.pdf">Β'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/KST_EPKA.pdf">ΚΣΤ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/1_EBA.pdf">1η
+                            Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li></xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/MAINGREECE.pdf">2.
+                        ΣΤΕΡΕΑ ΕΛΛΑΔΑ</xhtml:a></xhtml:p>
+                <xhtml:ul><xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/TH_EPKA.pdf"
+                            >Θ' Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/I_EPKA.pdf">Ι'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/IA_EPKA.pdf">ΙΑ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/ID_EPKA.pdf">ΙΔ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/LST_EPKA.pdf">ΛΣΤ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/22_EBA.pdf">22η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/23_EBA.pdf">23η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/24_EBA.pdf">24η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li></xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/PELOPPONISOS.pdf">3.
+                        ΠΕΛΟΠΟΝΝΗΣΟΣ</xhtml:a></xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/D_EPKA.pdf">Δ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/E_EPKA.pdf">Ε'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/ST_EPKA.pdf">ΣΤ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/Z_EPKA.pdf">Ζ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/LZ_EPKA.pdf">ΛΖ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/LH_EPKA.pdf">ΛΗ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/LTH_EPKA.pdf">ΛΘ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/5_EBA.pdf">5η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/6_EBA.pdf">6η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/25_EBA.pdf">25η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/26_EBA.pdf">26η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                </xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/THESSALIA.pdf">4.
+                        ΘΕΣΣΑΛΙΑ</xhtml:a></xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/IC_EPKA.pdf">ΙΓ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/IE_EPKA.pdf">ΙΕ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/LD_EPKA.pdf">ΛΔ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/7_EBA.pdf">7η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/19_EBA.pdf">19η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                </xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/MAKEDONIA.pdf">5.
+                        ΜΑΚΕΔΟΝΙΑ - ΘΡΑΚΗ</xhtml:a></xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/IST_EPKA.pdf">ΙΣΤ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/IZ_EPKA.pdf">ΙΖ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/IH_EPKA.pdf">ΙΗ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/ITH_EPKA.pdf">ΙΘ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/KZ_EPKA.pdf">ΚΖ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/KH_EPKA.pdf">ΚΗ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/KTH_EPKA.pdf">ΚΘ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/L_EPKA.pdf">Λ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/9_EBA.pdf">9η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/10_EBA.pdf">10η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/11_EBA.pdf">11η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/12_EBA.pdf">12η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/15_EBA.pdf">15η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/16_EBA.pdf">16η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/17_EBA.pdf">17η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                </xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/B_AIGAIO.pdf">6. ΒΟΡΕΙΟ
+                        ΑΙΓΑΙΟ</xhtml:a></xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/K_EPKA.pdf">Κ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/3_EBA.pdf">3η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/14_EBA.pdf">14η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/KYKLADES.pdf">7.
+                            ΚΥΚΛΑΔΕΣ</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/KA_EPKA.pdf">ΚΑ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/2_EBA.pdf">2η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/DODEKANHSA.pdf">8.
+                            ΔΩΔΕΚΑΝΗΣΑ</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/KB_EPKA.pdf">ΚΒ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/4_EBA.pdf">4η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                </xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/KRHTH.pdf">9.
+                        ΚΡΗΤΗ</xhtml:a></xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/KC_EPKA.pdf">ΚΓ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/KD_EPKA.pdf">ΚΔ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/KE_EPKA.pdf">ΚΕ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/13_EBA.pdf">13η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/28_EBA.pdf">28η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                </xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/HPEIROS.pdf">10.
+                        ΗΠΕΙΡΟΣ</xhtml:a></xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/IB_EPKA.pdf">ΙΒ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/LB_EPKA.pdf">ΛΒ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/LC_EPKA.pdf">ΛΓ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/8_EBA.pdf">8η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                </xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/IONIA_NHSIA.pdf">11.
+                        ΙΟΝΙΑ ΝΗΣΙΑ</xhtml:a></xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/H_EPKA.pdf">Η'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/LE_EPKA.pdf">ΛΕ'
+                            Eφορεία Προϊστορικών &amp; Κλασικών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/20_EBA.pdf">20η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/21_EBA.pdf">21η
+                            Eφορεία Βυζαντινών Αρχαιοτήτων</xhtml:a></xhtml:li>
+                </xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/EEA.pdf"> 12. Eφορεία
+                        Εναλίων Αρχαιοτήτων</xhtml:a></xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/EPSBE.pdf">Eφορεία
+                            Παλαιοανθρωπολογίας Σπηλαιολογίας Βόρειας Ελλάδας</xhtml:a></xhtml:li>
+                    <xhtml:li><xhtml:a>href="http://www.yppo.gr/0/anaskafes/pdfs/EPSNE.pdf">Eφορεία
+                            Παλαιοανθρωπολογίας Σπηλαιολογίας Νότιας Ελλάδας</xhtml:a></xhtml:li>
+                </xhtml:ul>
+                <xhtml:p><xhtml:a href="http://www.yppo.gr/0/anaskafes/pdfs/TIMELINE.pdf"
+                        >ΧΡΟΝΟΛΟΓΙΟ</xhtml:a></xhtml:p>
+            </xhtml:blockquote>
+        </xhtml:div>
+    </ic:formattedCitation>
+</NYUCoreRecord>
