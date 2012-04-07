@@ -9,7 +9,7 @@ namespace nc = "http://purl.org/nyu/digicat/"
 namespace ic = "http://isaw.nyu.edu/meta/ns/"
 namespace xhtml = "http://www.w3.org/1999/xhtml"
 
-start = Core | Record
+start = (Core | Record)
 
 Core = element nc:NYUCoreSet {
     Record*

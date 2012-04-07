@@ -5,6 +5,7 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ic="http://isaw.nyu.edu/meta/ns/"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xml:id="archaeological-work-of-ephorias-on-the-internet" xml:lang="en">
+    <!-- how to indicate this is a web publication? -->
     <accessURL>http://www.yppo.gr/0/anaskafes/</accessURL>
     <ic:formattedCitation type="xhtml">
         <xhtml:div>

@@ -1,0 +1,52 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:res="http://purl.org/vocab/resourcelist/schema#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bibo="http://purl.org/ontology/bibo/"
+ xmlns:ctag="http://commontag.org/ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <z:UserItem rdf:about="http://zotero.org/groups/3593/items/MC4SEJ7E">
+        <res:resource>
+            <bibo:AcademicArticle>
+                <dcterms:title>Susanna e la prima visione di Daniele in due papiri inediti della Bibliotheca Bodmeriana: P.Bodm. XLV et P.Bodm. XLVI</dcterms:title>
+                <bibo:pages>81-120</bibo:pages>
+                <bibo:shortTitle>P.Bodm. 45-46</bibo:shortTitle>
+                <dcterms:isPartOf>
+                    <bibo:Issue>
+                        <bibo:volume>38</bibo:volume>
+                        <dcterms:date>1981</dcterms:date>
+                        <bibo:editor rdf:nodeID="n11"/>
+                        <bibo:editorList>
+                            <rdf:Seq>
+                                <rdf:li rdf:nodeID="n11"/>
+                                <rdf:li rdf:nodeID="n13"/>
+                            </rdf:Seq>
+                        </bibo:editorList>
+                        <bibo:editor rdf:nodeID="n13"/>
+                        <dcterms:isPartOf>
+                            <bibo:Journal>
+                                <dcterms:title>Museum Helveticum</dcterms:title>
+                                <dcterms:isPartOf>
+                                    <bibo:Series>
+                                        <dcterms:title>Papyrus Bodmer</dcterms:title>
+                                    </bibo:Series>
+                                </dcterms:isPartOf>
+                            </bibo:Journal>
+                        </dcterms:isPartOf>
+                    </bibo:Issue>
+                </dcterms:isPartOf>
+            </bibo:AcademicArticle>
+        </res:resource>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>Papyri</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+    </z:UserItem>
+    <foaf:Person rdf:nodeID="n11">
+        <foaf:givenname>Antonio</foaf:givenname>
+        <foaf:surname>Carlini</foaf:surname>
+    </foaf:Person>
+    <foaf:Person rdf:nodeID="n13">
+       <foaf:givenname>Annamaria</foaf:givenname><foaf:surname>Citi</foaf:surname>
+    </foaf:Person>
+</rdf:RDF>

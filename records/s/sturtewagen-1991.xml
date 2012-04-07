@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema-rnc/nyucore.rnc" type="application/relax-ng-compact-syntax"?>
+<NYUCoreSet xmlns="http://purl.org/nyu/digicat/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ic="http://isaw.nyu.edu/meta/ns/"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <NYUCoreRecord xml:id="sturtewagen-1991" xml:lang="en">
+        <dc:title>The funerary papyrus Palau Rib. Nr. Inv. 450</dc:title>
+        <ic:short>Estud.Pap. 1</ic:short>
+        <ic:short>Sturtewagen 1991</ic:short>
+        <!-- can't associate individual short titles with different projects 
+        or use contexts -->
+        <dc:type>http://purl.org/dc/dcmitype/Text</dc:type>
+        <dcterms:isPartOf>#estud-pap</dcterms:isPartOf>
+        <!-- but how to say "is volume 1 of Estudis de papirologia -->
+        <dc:creator>Christian Sturtewagen</dc:creator>
+        <!-- can't say "editor" -->
+        <!-- can't distinguish first/last -->
+        <isbn>9788487843006</isbn>
+        <dc:subject>Papyrological Series</dc:subject>
+        <!-- can't distinguish between isbn 10 and isbn 13 -->
+        <dc:date>1991</dc:date>
+        <dc:publisher>Institut de Teologia Fomanental Seminari de Papirología</dc:publisher>
+        <!-- what about place of publication? in this case: Barcelona. 
+        Not the same as dcterms:spatial -->
+        <dc:format><!-- there is no mime type for "dead tree" --></dc:format>
+        
+        
+    </NYUCoreRecord>
+
+    <NYUCoreRecord xml:id="estud-pap" xml:lang="en">
+        <dc:title>Estudis de papirología i filología bíblica</dc:title>
+        <dc:type>series</dc:type>
+    </NYUCoreRecord>
+
+</NYUCoreSet>
