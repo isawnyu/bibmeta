@@ -1,0 +1,42 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:res="http://purl.org/vocab/resourcelist/schema#"
+ xmlns:ctag="http://commontag.org/ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bibo="http://purl.org/ontology/bibo/"
+ xmlns:address="http://schemas.talis.com/2005/address/schema#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <z:UserItem rdf:about="http://zotero.org/groups/3593/items/ZS2SDWC5">
+        <res:resource rdf:resource="urn:isbn:9788487843006"/>
+        <ctag:tagged>
+           <ctag:UserTag><ctag:label>Series</ctag:label></ctag:UserTag>
+        </ctag:tagged>
+    </z:UserItem>
+    <bibo:Book rdf:about="urn:isbn:9788487843006">
+        <dcterms:title>The funerary papyrus Palau Rib. Nr. Inv. 450</dcterms:title>
+        <bibo:volume>1</bibo:volume>
+        <dcterms:publisher>
+            <foaf:Organization>
+                <address:localityName>Barcelona</address:localityName>
+                <foaf:name>Institut de Teologia Fomanental  Seminari de Papirología</foaf:name>
+            </foaf:Organization>
+        </dcterms:publisher>
+        <dcterms:date>1991</dcterms:date>
+        <bibo:isbn13>9788487843006</bibo:isbn13>
+        <bibo:shortTitle>Estud.Pap.</bibo:shortTitle>
+        <bibo:editor rdf:nodeID="n2"/>
+        <bibo:editorList>
+           <rdf:Seq><rdf:li rdf:nodeID="n2"/></rdf:Seq>
+        </bibo:editorList>
+        <dcterms:isPartOf>
+            <bibo:Series>
+                <dcterms:title>Estudis de papirología i filología bíblica</dcterms:title>
+            </bibo:Series>
+        </dcterms:isPartOf>
+    </bibo:Book>
+    <foaf:Person rdf:nodeID="n2">
+        <foaf:givenname>Christian</foaf:givenname>
+        <foaf:surname>Sturtewagen</foaf:surname>
+    </foaf:Person>
+</rdf:RDF>
