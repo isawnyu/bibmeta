@@ -1,0 +1,8 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix : <http://isaw.nyu.edu/meta/> .
+
+:abate-1862 a bibo:Document;
+    has bibo:shortTitle "Abate 1862";
+    has bibo:shortDescription "F. Abate, Primi studi sull’acquedotto Claudio. Rapporto al Sindaco di Napoli per Felice Abate, Naples, 1862." .
+        
+ 
