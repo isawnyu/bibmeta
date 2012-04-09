@@ -19,6 +19,7 @@
         <!-- can't associate individual short titles with different projects 
         or use contexts -->
         <dc:type>text</dc:type>
+        <!-- there is no mime type for dead tree -->
         <dcterms:isPartOf>#estud-pap</dcterms:isPartOf>
         <!-- but how to say "is volume 1 of Estudis de papirologia -->
         <dc:contributor role="author">
@@ -30,17 +31,17 @@
         <dc:subject>Papyrological Series</dc:subject>
         <dc:date>1991</dc:date>
         <dc:publisher>
-            <foaf:Organization><foaf:name>Institut de Teologia Fomanental Seminari de Papirología</foaf:name>
-            </foaf:Organization></dc:publisher>
-        <!-- what about place of publication? in this case: Barcelona. 
-        Not the same as dcterms:spatial -->
-        <dc:format><!-- there is no mime type for "dead tree" --></dc:format>
+            <foaf:Organization>
+                <foaf:name>Institut de Teologia Fomanental Seminari de Papirología</foaf:name>
+                <addr:localityName>Barcelona</addr:localityName>
+            </foaf:Organization>
+        </dc:publisher>
     </NYUCoreRecord>
 
     <NYUCoreRecord xml:id="estud-pap" xml:lang="en">
-        <!-- how to indicate this is a series? -->
+        <bibo:Document>series</bibo:Document>
         <dc:title>Estudis de papirología i filología bíblica</dc:title>
-        <dc:type>http://purl.org/dc/dcmitype/Text</dc:type>
+        <dc:type>collection</dc:type>
     </NYUCoreRecord>
 
 </NYUCoreSet>
