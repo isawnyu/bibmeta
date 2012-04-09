@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema-rnc/nyucore.rnc" type="application/relax-ng-compact-syntax"?>
 <NYUCoreRecord xmlns="http://purl.org/nyu/digicat/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ic="http://isaw.nyu.edu/meta/ns/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xmlns:ic="http://isaw.nyu.edu/meta/ns/"
     xml:id="abate-1862"
     xml:lang="en">
-    <ic:short>Abate 1862</ic:short>
+    <bibo:Document>document</bibo:Document>
+    <dc:title type="short">Abate 1862</dc:title>
     <ic:formattedCitation type="text">F. Abate, Primi studi sull’acquedotto Claudio. Rapporto al Sindaco di
         Napoli per Felice Abate, Naples, 1862.</ic:formattedCitation>
 </NYUCoreRecord>

@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema-rnc/nyucore.rnc" type="application/relax-ng-compact-syntax"?>
 <NYUCoreRecord xmlns="http://purl.org/nyu/digicat/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ic="http://isaw.nyu.edu/meta/ns/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xmlns:ic="http://isaw.nyu.edu/meta/ns/"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
-    xml:id="archaeological-work-of-ephorias-on-the-internet" xml:lang="en">
-    <!-- how to indicate this is a web publication? -->
-    <accessURL>http://www.yppo.gr/0/anaskafes/</accessURL>
+    
+    xml:id="archaeological-work-of-ephorias-on-the-internet" 
+    xml:lang="en">
+    
+    <bibo:Document>collected document</bibo:Document>
+    <bibo:identifier function="access" type="uri">http://www.yppo.gr/0/anaskafes/</bibo:identifier>
     <ic:formattedCitation type="xhtml">
         <xhtml:div>
             <xhtml:h1>The archaeological work of the ephorias on the Internet</xhtml:h1>

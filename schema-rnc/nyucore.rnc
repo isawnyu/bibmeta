@@ -8,6 +8,9 @@ namespace dcterms = "http://purl.org/dc/terms/"
 namespace nc = "http://purl.org/nyu/digicat/"
 namespace ic = "http://isaw.nyu.edu/meta/ns/"
 namespace xhtml = "http://www.w3.org/1999/xhtml"
+namespace bibo = "http://purl.org/ontology/bibo/"
+namespace foaf = "http://xmlns.com/foaf/0.1/"
+namespace address="http://schemas.talis.com/2005/address/schema#"
 
 start = (Core | Record)
 
@@ -16,47 +19,152 @@ Core = element nc:NYUCoreSet {
 }
 
 Lang = attribute xml:lang { xsd:language }
-DCDefault = Lang?, xsd:token 
+DCDefault = Lang?, string 
 
 Record = element nc:NYUCoreRecord { 
     attribute xml:id { xsd:ID },                            # identifier for this metadata record
     Lang,                                                   # must indicate language of the record itself (not the work)
-    element nc:accessURL { xsd:anyURI }*,               
-    element dc:identifier { xsd:anyURI }*,                  # more constrained type that that in dublin core's schema
-    element nc:archiveURL { xsd:anyURI }*,                  
-    element dc:title { DCDefault }*,
-    element dcterms:alternative { DCDefault }*,
-    element nc:vernacular { DCDefault }*, 
-    element nc:uniform  { DCDefault }*,
-    element ic:short { DCDefault }*,                        # short title(s)
-    element dc:type { DCDefault }*,
+   element bibo:Document {                                 # use bibo:Document, with values corresponding to more specific bibo classes 
+            string "academic article"                              # I've left out specifically legal types
+            | string "article"                                      # I've also left out some superclasses
+            | string "audio document"
+            | string "audio-visual document"
+            | string "book"
+            | string "book section"
+            | string "chapter"
+            | string "collected document"
+            | string "document"
+            | string "document part"
+            | string "edited book"
+            | string "email"
+            | string "excerpt"
+            | string "film"
+            | string "image"
+            | string "interview"
+            | string "issue"
+            | string "journal"
+            | string "letter"
+            | string "magazine"
+            | string "manual"
+            | string "manuscript"
+            | string "map"
+            | string "multivolume book"
+            | string "newspaper"
+            | string "note"
+            | string "personal communication"
+            | string "proceedings"
+            | string "report"
+            | string "series"
+            | string "slide"
+            | string "slideshow"
+            | string "standard"
+            | string "thesis, masters"
+            | string "thesis, phd"
+            | string "webpage"
+            | string "website" 
+    },
+    element bibo:identifier {                               # use bibo:identifier, with the type values corresponding to more specific bibo identifier types
+        attribute type { 
+            string "asin" 
+            | string "coden"
+            | string "eanucc13" 
+            | string "eissn"
+            | string "gtin14"
+            | string "handle"
+            | string "isbn"
+            | string "isbn10"
+            | string "isbn13"
+            | string "issn"
+            | string "lccn"
+            | string "oclcnum"
+            | string "pmid"
+            | string "sici"
+            | string "upc"
+            | string "uri" }?,
+        attribute function {
+            string "access"
+            | string "archive"
+        }?,
+    text }*,                  
+    element dc:title { 
+        Lang?,
+        attribute type {
+            string "main"                                   # generates dc:title
+            | string "short"                                # generates bibo:shortTitle
+            | string "vernacular"
+            | string "uniform"
+            | string "alternative"                           
+        }?,
+    text }*,
+    element dc:type { string "collection"
+            | string "dataset"
+            | string "image"
+            | string "interactive resource"
+            | string "moving image"
+            | string "physical object"
+            | string "service"
+            | string "software"
+            | string "sound"
+            | string "still image"
+            | string "text"
+        }*,
+     element dc:format { 
+        string "text/csv"
+        | string "text/html"
+        | string "text/sgml"
+        | string "text-xml"
+        | string "application/atom+xml"
+        | string "application/msword"
+        | string "application/pdf"
+        | string "application/rdf+xml"
+        | string "application/rtf"
+        | string "application/sgml"
+        | string "application/tei+xml"
+        | string "application/xhtml+xml"
+        | string "application/xml"
+        | string "application/zip"
+        | string "image/jp2"
+        | string "image/jpeg"
+        | string "image/png"
+        | string "image/svg+xml"
+        | string "image/tiff"
+    }*,
+
     element dcterms:isPartOf { xsd:anyURI }*,               # more constrained type that that in dublin core's schema
-    element dc:creator { DCDefault }*,
-    element dc:contributor { DCDefault }*,
-    element nc:isbn { DCDefault }*,
-    element nc:issn { DCDefault }*,
+    element dc:contributor {
+        Lang?,
+        attribute role {
+            string "author"
+            | string "contributor"
+            | string "creator"
+            | string "editor"
+            | string "translator"                           # not in bibo
+        }?,
+        (text | Person | Organization) }*,
     element dc:subject { DCDefault }*,
-    element nc:genre { DCDefault }*,
-    element nc:classification { DCDefault }*,
+
+    element nc:classification { DCDefault }*,               # don't see a corresponding property in bibo
     element dc:date { DCDefault }*,
     element dcterms:modified { DCDefault }*,
-    element dc:publisher { DCDefault }*,
+    element dc:publisher { 
+        Lang?,
+        (text | Person | Organization)
+    }*,
     element dc:language { DCDefault }*,
     element dc:coverage { DCDefault }*,
     element dcterms:spatial { DCDefault }*,
     element dcterms:temporal { DCDefault }*,
     element dcterms:extent { DCDefault }*,
-    element dc:format { DCDefault }*,
     element dc:description { DCDefault }*,
-    element dcterms:abstract { Lang?, xsd:string }*,
-    element nc:fullText { Lang?, xsd:string }?,
+    element dcterms:abstract { Lang?, text }*,
+    element nc:fullText { Lang?, text }?,             # bibo deprecated bibo:content in favor of rdf:value, but without much explanation
     element dc:rights { DCDefault }*,
     element ic:formattedCitation { Formatted }?,     # formatted citation in either plain text or xhtml
     element ic:TOC { Formatted }?                   # table of contents in either plain text or xhtml
     
 }
 
-PlainText = Lang?, attribute type { "text" }?, xsd:string
+PlainText = Lang?, attribute type { "text" }?, text
 RichText = Lang?, attribute type { "xhtml" }?, xhtmlDiv
 Formatted = PlainText | RichText
 
@@ -69,4 +177,27 @@ xhtmlDiv = element xhtml:div {
       (attribute * { text }
        | text
        | anyXHTML)*}
+
+Person = element foaf:Person {
+    Lang?,
+    attribute uri { xsd:anyURI }?,
+    (Name
+    | ( 
+        element foaf:givenname { text },
+        element foaf:family_name { text },
+        element foaf:depiction { text }?,
+        element foaf:homepage { xsd:anyURI }?
+      )
+    )
+}
+
+Organization = element foaf:Organization {
+    Lang?,
+    attribute uri { xsd:anyURI }?,
+    Name,
+    Locality?
+}
+
+Name = element foaf:name { text }
+Locality = element address:localityName { text }
 

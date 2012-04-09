@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../../schema-rnc/nyucore.rnc" type="application/relax-ng-compact-syntax"?>
 <NYUCoreRecord xmlns="http://purl.org/nyu/digicat/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:dc="http://purl.org/dc/elements/1.1/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:foaf = "http://xmlns.com/foaf/0.1/"
+    
     xml:id="elliott-2004"
     xml:lang="en">
-    <!-- how to indicate this is a dissertation? -->
-    <accessURL>http://isaw.nyu.edu/members/tom.elliott-40nyu.edu/downloads/epigraphic-evidence-for-boundary-disputes-in-the-roman-empire/view</accessURL>
+    
+    <bibo:Document>thesis, phd</bibo:Document>
+    <bibo:identifier function="access"  type="uri">http://isaw.nyu.edu/members/tom.elliott-40nyu.edu/downloads/epigraphic-evidence-for-boundary-disputes-in-the-roman-empire/view</bibo:identifier>
     <dc:title>Epigraphic Evidence for Boundary Disputes in the Roman Empire</dc:title>
-    <dc:type>http://purl.org/dc/dcmitype/Text</dc:type>
-    <dc:creator>Thomas Elliott</dc:creator>
+    <dc:type>text</dc:type>
+    <dc:format>application/pdf</dc:format>
+    <dc:contributor role="author">
+        <foaf:Person>
+            <foaf:givenname>Thomas</foaf:givenname>
+            <foaf:family_name>Elliott</foaf:family_name>
+            <foaf:homepage>http://isaw.nyu.edu/people/staff/tom_elliott</foaf:homepage>
+        </foaf:Person>
+    </dc:contributor>    
     <dc:date>2004</dc:date>
     <dc:language>en</dc:language>
-    <dc:format>application/pdf</dc:format>
     <dcterms:abstract xml:lang="mul">This dissertation presents all published Greek and Latin
         epigraphic documents relating to internal boundary disputes of the Roman empire. In date, it
         spans the period from 2 BC to the third century AD. Spatially, the documents derive from 12
