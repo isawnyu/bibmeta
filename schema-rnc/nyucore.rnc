@@ -18,7 +18,14 @@ Core = element nc:NYUCoreSet {
     Record*
 }
 
-Lang = attribute xml:lang { xsd:language }
+Lang = attribute xml:lang { 
+    xsd:language "ar" 
+    | xsd:language "de"
+    | xsd:language "el"
+    | xsd:language "en" 
+    | xsd:language "fr"
+    | xsd:language }
+    
 DCDefault = Lang?, string 
 
 Record = element nc:NYUCoreRecord { 
@@ -150,7 +157,22 @@ Record = element nc:NYUCoreRecord {
         Lang?,
         (text | Person | Organization)
     }*,
-    element dc:language { DCDefault }*,
+    element dc:language { Lang?, 
+        ( string "Arabic"
+            | string "Chinese"
+            | string "English"
+            | string "French"
+            | string "German"
+            | string "Greek"
+            | string "Hungarian"
+            | string "Italian"
+            | string "Japanese"
+            | string "Romanian"
+            | string "Russian"
+            | string "Spanish"
+            | string
+            )
+    }*,
     element dc:coverage { DCDefault }*,
     element dcterms:spatial { DCDefault }*,
     element dcterms:temporal { DCDefault }*,
@@ -160,7 +182,8 @@ Record = element nc:NYUCoreRecord {
     element nc:fullText { Lang?, text }?,             # bibo deprecated bibo:content in favor of rdf:value, but without much explanation
     element dc:rights { DCDefault }*,
     element ic:formattedCitation { Formatted }?,     # formatted citation in either plain text or xhtml
-    element ic:TOC { Formatted }?                   # table of contents in either plain text or xhtml
+    element ic:TOC { Formatted }?,                   # table of contents in either plain text or xhtml
+    element ic:formattedAbstract { Formatted }?
     
 }
 
@@ -183,9 +206,10 @@ Person = element foaf:Person {
     attribute uri { xsd:anyURI }?,
     (Name
     | ( 
-        element foaf:givenname { text },
-        element foaf:family_name { text },
-        element foaf:depiction { text }?,
+        (element foaf:givenname { text } & 
+        element foaf:family_name { text }) &
+        element foaf:depiction { xsd:anyURI }? &
+        element foaf:mbox { xsd:anyURI }? & 
         element foaf:homepage { xsd:anyURI }?
       )
     )

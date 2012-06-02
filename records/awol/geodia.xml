@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/Users/paregorios/Documents/files/B/bibmeta/repos/bibmeta-github/schema-rnc/nyucore.rnc" type="application/relax-ng-compact-syntax"?>
+
+<?xml-stylesheet type="text/css" href="nyucore.css"?>
+<nc:NYUCoreRecord  xml:id="geodia" xml:lang="en"
+    xmlns:dc = "http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms = "http://purl.org/dc/terms/"
+    xmlns:nc = "http://purl.org/nyu/digicat/"
+    xmlns:ic = "http://isaw.nyu.edu/meta/ns/"
+    xmlns:bibo = "http://purl.org/ontology/bibo/"
+    xmlns:foaf = "http://xmlns.com/foaf/0.1/"
+    xmlns:address="http://schemas.talis.com/2005/address/schema#">
+    
+    <bibo:Document>website</bibo:Document>
+    <bibo:identifier function="access" type="uri"
+        >http://geodia.laits.utexas.edu/</bibo:identifier>
+    <dc:title>GeoDia</dc:title>
+    <dc:type>interactive resource</dc:type>    
+    <dc:format>text/html</dc:format>
+    <dc:contributor role="author">
+        <foaf:Person>
+            <foaf:family_name>Rabinowitz</foaf:family_name>
+            <foaf:givenname>Adam</foaf:givenname>
+        </foaf:Person>
+    </dc:contributor>
+    <dc:contributor role="contributor">
+        <foaf:Person>
+            <foaf:givenname>Stuart </foaf:givenname>
+            <foaf:family_name>Ross</foaf:family_name>
+        </foaf:Person>
+    </dc:contributor>
+    <dc:contributor role="contributor">
+        <foaf:Person>
+            <foaf:givenname>Nick</foaf:givenname>
+            <foaf:family_name>Rabinowitz</foaf:family_name>
+        </foaf:Person>
+    </dc:contributor>
+    <dc:contributor role="contributor">
+        <foaf:Person>
+            <foaf:givenname>Peter</foaf:givenname>
+            <foaf:family_name>Keane</foaf:family_name>
+        </foaf:Person>
+    </dc:contributor>
+    <dc:publisher>
+        <foaf:Organization uri="http://www.laits.utexas.edu/">
+            <foaf:name>UT Liberal Arts Instructional Technology
+                Services</foaf:name>
+        </foaf:Organization>
+    </dc:publisher>
+    <dc:language>English</dc:language>
+    <dc:rights>not indicated</dc:rights>
+    <ic:TOC type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">asdf</div>
+    </ic:TOC>
+    <ic:formattedAbstract type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">GeoDia
+            (jee-oh-DEE-uh, short for "geodiachronicity") is intended
+            to provide a simple, intuitive way for people to visualize
+            the temporal, geographic, and material aspects of ancient
+            Mediterranean civilizations. Enter GeoDia >> It uses a
+            mashup of MIT's Simile Timeline and Google Maps APIs to
+            display the important archaeological sites and historical
+            events of the ancient Mediterranean world in both space
+            and time, and uses the Digital Archives Services (DASe)
+            infrastructure to integrate visual resources associated
+            with those archaeological sites during specific historical
+            and art-historical periods. The user can browse sites or
+            events by region or culture, or search for specific sites,
+            events, or images. The results will be displayed in their
+            spatial and temporal context on the map and the timeline.
+            Results sets can be managed, shared, and exported to KML.
+            GeoDia is the result of a two-year long project proposed
+            and directed by Adam Rabinowitz, assistant professor of
+            Classics and assistant director of the Institute of
+            Classical Archaeology at University of Texas at Austin,
+            with the generous support of the Liberal Arts
+            Instructional Technology Services.</div>
+    </ic:formattedAbstract>
+
+</nc:NYUCoreRecord>

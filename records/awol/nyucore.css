@@ -1,0 +1,151 @@
+@namespace nc "http://purl.org/nyu/digicat/";
+@namespace bibo "http://purl.org/ontology/bibo/";
+@namespace dc "http://purl.org/dc/elements/1.1/";
+@namespace dcterms "http://purl.org/dc/terms/";
+@namespace ic  "http://isaw.nyu.edu/meta/ns/";
+@namespace xhtml "http://www.w3.org/1999/xhtml";
+@namespace foaf "http://xmlns.com/foaf/0.1/";
+
+nc|NYUCoreRecord {
+    display: block;
+    margin: 1em;
+    font-family: Arial;
+}
+
+* {
+    display: block;
+    margin-top: 1em;
+    border-bottom: 1px solid #DDDDDD;
+    color: blue;
+}
+
+bibo|Document:before {
+    content: "Document Type (Bibo): ";
+}
+
+bibo|identifier:before {
+    content: attr(type);
+}
+
+dc|contributor:before {
+    content: attr(role);
+}
+
+dc|date:before {
+    content: "Date of Publication"
+}
+
+dc|description:before {
+    content: "Plain-text Description"
+}
+
+dc|publisher:before {
+    content: "Publisher"
+}
+
+dc|subject:before {
+    content: "Subject"
+}
+
+dc|title:before {
+    content: "Title"
+}
+
+dc|type:before {
+    content: "Type (Dublin Core)"
+}
+
+dc|format:before {
+    content: "Format (Dublin Core)"
+}
+
+dc|language:before {
+    content: "Language"
+}
+
+dc|rights:before {
+    content: "rights"
+}
+
+dcterms|isPartOf:before {
+    content: "URI of Parent Resource"
+}
+
+dcterms|modified:before {
+    content: "Date of last modification"
+}
+
+dcterms|spatial:before {
+    content: "Spatial extent"
+}
+
+dcterms|temporal:before {
+    content: "Temporal extent"
+}
+
+foaf|family_name, foaf|givenname, foaf|name, foaf|Person, foaf|Organization {
+    margin-left: 2em;
+}
+foaf|family_name:before {
+    content: "Family Name";    
+}
+
+foaf|givenname:before {
+    content: "Given Name";
+}
+
+foaf|name:before {
+    content: "Full Name"
+}
+
+foaf|Organization:before {
+    content: "Organization"
+}
+
+foaf|Organization:after {
+    content: attr(uri);
+    margin-left: 2em;
+    color: green;
+    font-size: 80%;
+    font-style: normal;
+    padding: 0.5em;
+}
+foaf|Person:before {
+    content: "Person"
+}
+
+ic|formattedAbstract:before {
+    content: "Plain-text Quoted Abstract"
+}
+
+ic|formattedAbstract:before {
+    content: "Formatted (XHTML) Abstract"
+}
+ic|TOC:before {
+    content: "Formatted (XHTML) Table of Contents"
+}
+
+xhtml|div {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 90%;
+    min-height: 1em;
+    padding: 1em;
+    border: 1px solid #DDDDDD;
+}
+
+xhtml|div:before {
+    content: none;
+}
+
+*:before {
+    font-weight: bold;
+    padding-right: 1em;
+    text-transform: lowercase;
+    font-style: normal;
+    color: black;
+}
+
+
+
