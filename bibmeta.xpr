@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="13.2">
+    <meta>
+        <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="bibmeta.xpr">
+        <folder path="comparanda/"/>
+        <folder path="records/"/>
+        <folder path="schema-rnc/"/>
+    </projectTree>
+</project>

@@ -1,0 +1,80 @@
+namespace address = "http://schemas.talis.com/2005/address/schema#"
+namespace bibo = "http://purl.org/ontology/bibo/"
+namespace dcterms = "http://purl.org/dc/terms/"
+namespace foaf = "http://xmlns.com/foaf/0.1/"
+namespace rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+namespace res = "http://purl.org/vocab/resourcelist/schema#"
+namespace z = "http://www.zotero.org/namespaces/export#"
+
+start = rdf.RDF
+
+rdf.RDF = element rdf:RDF {
+    (bibo.AcademicArticle | bibo.Book)
+}
+
+bibo.AcademicArticle = element bibo:AcademicArticle {
+                    dcterms.title,
+                    element bibo:pages { xsd:NMTOKEN },
+                    bibo.shortTitle,
+                    dcterms.isPartOf
+                }
+                
+bibo.Book = element bibo:Book {
+            attribute rdf:about { xsd:NMTOKEN },
+            dcterms.title,
+            bibo.volume,
+            element dcterms:publisher {
+                element foaf:Organization {
+                    element address:localityName { xsd:NCName },
+                    element foaf:name { text }
+                }
+            },
+            dcterms.date,
+            element bibo:isbn13 { xsd:integer },
+            bibo.shortTitle,
+            bibo.editor,
+            bibo.editorList,
+            dcterms.isPartOf
+}
+
+
+
+foaf.Person =        element foaf:Person {
+            attribute rdf:nodeID { xsd:NCName },
+            element foaf:givenname { xsd:NCName },
+            element foaf:surname { xsd:NCName }
+        }
+        
+dcterms.title = element dcterms:title { text }
+
+bibo.shortTitle = element bibo:shortTitle { text }
+
+dcterms.isPartOf =
+    element dcterms:isPartOf {
+        (element bibo:Issue {
+             bibo.volume,
+             dcterms.date,
+             (bibo.editor | bibo.editorList)+,
+             dcterms.isPartOf
+         },
+         element bibo:Journal { dcterms.title, dcterms.isPartOf })?,
+        element bibo:Series { dcterms.title }?
+    }
+    
+bibo.volume = element bibo:volume { xsd:integer }
+
+dcterms.date = element dcterms:date { xsd:integer }
+
+bibo.editor =
+    element bibo:editor {
+        attribute rdf:nodeID { xsd:NCName }
+    }
+
+bibo.editorList =
+    element bibo:editorList {
+        element rdf:Seq {
+            element rdf:li {
+                attribute rdf:nodeID { xsd:NCName }
+            }+
+        }
+    }
